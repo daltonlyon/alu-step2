@@ -15,7 +15,7 @@ module tb_add4;
         cin = 0;
         for (i = 0; i < 16; i = i + 1) begin
             a = i[3:0];
-            b = (15 - i)[3:0];
+            b = 15 - i;
             #10;
         end
 
