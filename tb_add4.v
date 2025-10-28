@@ -13,10 +13,18 @@ module tb_add4;
         $dumpvars(0, tb_add4);
 
         cin = 0;
-        for (i = 0; i < 16; i = i + 1) begin a = i[3:0]; b = (15 - i)[3:0]; #10; end
+        for (i = 0; i < 16; i = i + 1) begin 
+            a = i[3:0]; 
+            b = (15 - i)[3:0]; 
+            #10; 
+        end
 
         cin = 1;
-        for (i = 0; i < 16; i = i + 1) begin a = i[3:0]; b = i[3:0];       #10; end
+        for (i = 0; i < 16; i = i + 1) begin 
+            a = i[3:0]; 
+            b = i[3:0]; 
+            #10; 
+        end
 
         $finish;
     end
